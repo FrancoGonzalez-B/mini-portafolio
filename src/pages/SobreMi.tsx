@@ -1,9 +1,28 @@
 function SobreMi() {
   return (
     <section>
-      <h1>Sobre Mí</h1>
-      <p>Estudio Ingeniería Civil en Informática, en la Universidad Catolica de Temuco, me encuentro en segundo semestre.</p>
-        <p>Me considero una persona resiliente, con capacidad de adaptación y busco un futuro mejor.</p>    
+      <div className="sobre-cabecera">
+        <div className="avatar">👤</div>
+        <div>
+          <h1>Sobre mí</h1>
+          <p>
+            Soy Franco, estudiante de Ingeniería Civil Informática.
+            Me apasiona el desarrollo de software y la resolución de problemas.
+          </p>
+        </div>
+      </div>
+
+      <h2>¿Qué estudio?</h2>
+      <p>
+        Estudio Ingeniería Civil Informática en la Universidad Católica de Temuco.
+      </p>
+
+      <h2>¿Qué me interesa?</h2>
+      <ul>
+        <li>Aprender</li>
+        <li>Crecer</li>
+        <li>Contribuir</li>
+      </ul>
     </section>
   )
 }

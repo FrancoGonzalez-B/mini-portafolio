@@ -7,13 +7,16 @@ type Props = {
 function TarjetaProyecto({ titulo, descripcion, enlace }: Props) {
   return (
     <article className="tarjeta">
-      <h3>{titulo}</h3>
-      <p>{descripcion}</p>
-      {enlace && (
-        <a href={enlace} target="_blank" rel="noreferrer">
-          Ver repositorio
-        </a>
-      )}
+      <div className="imagen-placeholder">🖼️</div>
+      <div>
+        <h3>{titulo}</h3>
+        <p>{descripcion}</p>
+        {enlace && (
+          <a href={enlace} target="_blank" rel="noreferrer" className="boton">
+            Ver proyecto →
+          </a>
+        )}
+      </div>
     </article>
   )
 }

@@ -3,12 +3,12 @@ import TarjetaProyecto from '../components/TarjetaProyecto'
 const proyectos = [
   {
     titulo: 'Portafolio Personal',
-    descripcion: 'Un portafolio web que muestra mis proyectos y habilidades.',
+    descripcion: 'Portafolio Personal es un sitio web personal que muestra mis habilidades y proyectos como desarrollador frontend. Está construido con React, TypeScript y React Router.',
     enlace: 'https://github.com/FrancoGonzalez-B/portafolio-franco.git',
   },
   {
-    titulo: 'Videojuego Arcade',
-    descripcion: 'Un videojuego clásico de tipo arcade desarrollado con math y pygame.',
+    titulo: 'Juego Arcade',
+    descripcion: 'Un juego de arcade simple hecho con pygame y math.',
     enlace: 'https://github.com/FrancoGonzalez-B/EID1.git',
   },
 ]
@@ -16,7 +16,8 @@ const proyectos = [
 function Proyectos() {
   return (
     <section>
-      <h1>Proyectos</h1>
+      <h1>Mis Proyectos</h1>
+      <p>Algunos de los proyectos en los que he trabajado.</p>
       {proyectos.map((p) => (
         <TarjetaProyecto
           key={p.titulo}
